@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-            $('#menu').fadeIn(500);
+        if ($(this).scrollTop() > 50) {
+            $('#div1').fadeIn(500);
         } else {
-            $('#menu').fadeOut(500);
+            $('#div1').fadeOut(500);
         }
     });
     $("#dropdown").mouseenter(function(){
