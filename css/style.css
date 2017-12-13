@@ -27,7 +27,7 @@
     .container-fluid-override {
         padding-right: 0px !important;
         padding-left: 0px !important;
-        border-top: 2px solid  #3FB8BF;
+        border-top: 2px solid  #4DC3E1;
     }
     .second-row > p {
         padding-top: 5px;
@@ -47,11 +47,14 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .space4{
+        margin-top: 30px;
+    }
     .align-left{
         text-align:left;
     }
     .cap {
-        font-size: 48px;
+        font-size: 44px;
         color: white;
         margin-top: 10%;
         margin-left:5%;
@@ -70,9 +73,14 @@
     .ln-hgt {
         line-height: 90%;
     }
+    .logo-hgt{
+        line-height: 100%;
+    }
     .button {
-        background-color:  #3FB8BF;
-        border: none;
+        background-color:  #4DC3E1;
+        /*border: none;*/
+        /*border-style: transparent;*/
+        border: 2px solid white;
         color: white;
         padding: 6px 16px;
         text-align: center;
@@ -83,15 +91,44 @@
     }
     .button:hover {
         background-color: white;
-        border: 2px solid #3FB8BF;
-        color: #3FB8BF;
+        border: 2px solid #4DC3E1;
+        color: #4DC3E1;
         font-weight: bold;
     }
     .nav-pos{
-        margin-left:30%;
-        margin-top: 4%;
-            }
-    .ul-des {
+        margin-right:6%;
+        margin-top: 3%;
+    }
+    .pos{
+        margin-right:6%;
+        margin-top: 1%;
+    }
+    .logo-pos{
+        width: 75px;
+        height: 55px;
+        margin-left: 25%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .logo-name{
+        margin-left: 30%;
+        font-size: 32px;
+    }
+    .fnt-menu{
+        font-size: 12px;
+        color: black;
+    }
+    .menu {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 75px;
+        background-color: #DDDDDD;
+        z-index: 9999;
+        display: none;
+    }
+
+    .ul-des {f
         list-style-type: none;
         margin-left:10%;
         padding: 0;
@@ -137,7 +174,7 @@
         display: block;
         text-align: center;
     }
-
+    
     .sliding-middle-out {
         display: inline-block;
         position: relative;
@@ -155,7 +192,7 @@
     }
     .sliding-middle-out:hover:after {
         width: 30%;
-        background: #3FB8BF;
+        background: #4DC3E1;
     }
     .fnt-color{
         font-size: 12px;
@@ -163,22 +200,13 @@
     }
     .fnt-color2{
         font-size: 22px;
-        color: #3FB8BF;
+        color: #4DC3E1;
         text-align: center;
     }
-    #menu {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        height: 75px;
-        background-color: #DDDDDD;
-        color: #FFFFFF;
-        z-index: 9999;
-        display: none;
-    }
+    
     .logo {
         margin-left: 30%;
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .img1{
         width: 120px;
@@ -196,7 +224,7 @@
 
     }
     .span2{
-        background-color: #3FB8BF;
+        background-color: #4DC3E1;
         border-radius: 100px;
         margin-left: 45%;
         width: 50px;
@@ -204,21 +232,21 @@
     }
     .span4{
         color:white; 
-        font-size:16px;
-        margin-left:45%;
-        text-align:left;
+        font-size:14px;
+        text-align:right;
     }
     .border-des{
         border-bottom: solid;
-        color: #3FB8BF;
+        color: #4DC3E1;
     }
     .div3{
         background-color: #333333;
 }
     .fnt2{
-        color: #3FB8BF;
-        text-align: center;
+        color: #4DC3E1;
         font-size: 24px;
+        float: left;
+        margin-top: 43px;
     }
     .fnt3{
         color: white;
@@ -244,9 +272,10 @@
     .main-menu > li>a:focus, .main-menu>li>a:hover {
         text-decoration: none;
         background-color: transparent !important;
+        color:#4DC3E1;
     }
     .span3{
-        color: #3FB8BF;
+        color: #4DC3E1;
         
     }
     .p3{
@@ -255,17 +284,23 @@
         text-align: center;
         font-size: 32px;
         margin-left: 27%;
+        margin-top: 20px;
+        margin-bottom: 40px;
         font-weight: bold;
         background-color: rgba(0,0,0,.4);
     }
     .space-right{
         margin-right:10px;
     }
+    .space-left{
+        margin-left:10px;
+    }
     .highlighted1 {
         background-color: rgba(0,0,0,.4);
-        width: 230px;
+        width: 240px;
         height: 40px;
         margin-bottom: 10px;
+
     }
     .highlighted2 {
         background-color: rgba(0,0,0,.4);
@@ -275,7 +310,7 @@
     }
     .highlighted3 {
         background-color: rgba(0,0,0,.4);
-        width: 175px;
+        width: 185px;
         height: 40px;
         /*margin-bottom: 10px;*/
     }
@@ -320,60 +355,183 @@
         border-radius: 50px;
     }
     .bg{
-        background-color: #3FB8BF;
+        background-color: #4DC3E1;
         border-radius: 50px;
     }
-    .image1{
+    
+    .python{
+        margin-left:7%;
+        margin-right:6px;
+        margin-bottom:30px;
+
+    }
+    .aws{
         margin-right:30px;
         margin-bottom:30px;
     }
-    .image2{
-        margin-left:3%;
+    .mongo{
         margin-right:30px;
         margin-bottom:30px;
     }
-    .image3{
+    .psql{
+        margin-right:45px;
+        margin-bottom:30px;
+    }
+    .node{
+        margin-right:30px;
+        margin-bottom:30px;
+    }
+    .react{
         margin-right:20px;
         margin-bottom:30px;
     }
-    .image4{
-        margin-left:10%;
-        margin-right:40px;
+    .angular{
+        margin-left:5%;
+        margin-right:30px;
         margin-bottom:30px;
     }
-    .image5{
-        margin-left:2%;
-        margin-right:10px;
+    .ts{
+        margin-right:30px;
+        margin-bottom:30px;
+        width:180px;
+        height:60px;
+    }
+
+    .redux{
+        margin-left:14%;
+        margin-right:40px;
+        margin-bottom:30px;
+        width:200px;
+        height:70px;
+    }
+    .android{
+        margin-right:30px;
+        margin-bottom:30px;
+        width:160px;
+        height:45px;
+    }
+    .django{
+        width:140px;
+        height:60px;
+        margin-right:50px;
         margin-bottom:30px;
     }
     .logo1{
         width:55px;
         height:40px;
         float:left;
+        margin-top: 7px;
     }
     .fnt-size{
         font-size:14px;
     }
     .list-color{
         color:#808080;
-        margin-top:3px;
+        margin-top:15px;
     }
     .mgn-top{
-        margin-top:3px;
+        margin-top:15px;
+        /*padding-top: 4px;*/
     }
-    .image-style{
-        width:30px;
-        height:30px;
+    .image-ln{
         float:right;
-        margin-right:5%;
-        margin-top:3px;
+        /*margin-right:2%;*/
+        color: white;
+        margin-top: 17px;
+        padding-top: 4px;
     }
-    .image-style1{
-        width:30px;
-        height:30px;
+    .image-fb{
+        color: white;
         float:right;
-        margin-top:3px;
-        margin-right:20px;
+        padding-top:4px;
+        margin-top: 17px;
+        margin-right:30px;
+        margin-left: 496px;
+    }
+    .image-twitter{
+        color: white;
+        float:right;
+        padding-top:4px;
+        margin-top: 17px;
+        margin-right:30px;
+    }
+    .footer {
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height: 64px;
+       background-color: #333333;
+       color: white;
+
+    }
+    .fa-linkedin:hover {
+        color:#808080;
+        cursor: pointer;
+    }
+    .fa-twitter:hover{
+        color:#808080;
+        cursor: pointer;
+    }
+    .fa-facebook:hover {
+        color:#808080;
+        cursor: pointer;
     }
 
+.mainDiv {
+    margin-left: 3px;
+    width: 70px;
+    height: 3px;
+    background-color: #4DC3E1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
 
+.div-experience-digitization-logo {
+    float: left;
+    left: 73%;
+    position: relative;
+}
+
+.div-experience-digitization {
+    float: left;
+    left: 75%;
+    position: relative;
+}
+
+.experience-digitization-parent{
+    margin: 0px;
+    width: 50%;
+    top: 10px;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0px;
+    float: right;
+    position: relative;
+    width: 69%;
+}
+
+.div-about-description {
+    width: 65%;
+    margin-left: 20px;
+}
+
+.separator {
+    background-color: gray;
+    width: 3px;
+    height: 50px;
+    margin: 8px;
+}
+
+.about-margin {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.separator-footer{
+    background-color: gray;
+    width: 2px;
+    height: 30px;
+    margin: 4px;
+}
