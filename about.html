@@ -1,46 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Essen Solutions</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        $("#navbar-top").load("topbar.html");
-       });
-      
-      $(document).ready(function(){
-          $("#navbar-foot").load("footbar.html");
-         });
-  </script>
-</head>
-<body>
-	<div id="navbar-top"></div>
-	
-	<div class="container-fluid" style="background-color:#f2f2f2;">
-			<div class="container">
-			<h3>About Essen Solutions</h3>
-			<p>
-				At Essen Solutions, Inc. we focus to deliver unique technology driven Staffing services and solution for your business and software services across USA . We at Essen Solutions are developing effective outsourcing partnerships with clients from various verticals like Automotive, Banking, Business Services, Energy, Financial, Insurance, Manufacturing, Pharmaceuticals, Retail, Transportation, and Utilities including small-midsized ISVs (Independent Software Vendors).<br/>
-			</p>
-			<p>
-				With specializations in Identity and Access Management, Security, Governance, Risk and Compliance, Java EE Development, Portals, Enterprise Applications and Business Intelligence, Business Analyst, SAS Analyst, Workday HCM Essen Solutions has a unique ability to assist our clients regardless of technology to meet strategic IT and business objectives.<br/>
-			</p>
-			<p>
-				Our team of experts tactically addresses each one of our clients to let them imagine, identify and invent opportunities to boost their business. We take precious time of our clients to understand the elite concept cropping up in their mind and research the market that is being entered to develop an unbeatable strategy. We promise to change your specific requirements from sales to production flawlessly.<br>
-			</p>
-			<p>
-				It’s time to toss around our prospects.<br>
-				We invite you to view some of our sample work to get an idea about the creativity and cooperation of our team working tirelessly to deliver their best. If you are interested in availing our range of services you can request for a free no obligation quote for your requirements.<br>
-				To get started today, Contact Us using our online contact form and we promise to be in touch with you within 48 working hours of receiving your request.<br>
-			</p>
-		</div>
-		<br>
-		</div>
-	
-	<div id="navbar-foot"></div>
 
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Essen Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fontawesome.io/3.2.1/icon/code/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid container-fluid-override">
+        <div class="background-image-about">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <a href="/"><img src="./img/Essen-logo.png" class="logo"></a>
+                </div>
+                <ul class="nav navbar-nav nav-pos pull-right main-menu">
+                    <li class="dropdn menu-item" id="dropdown">
+                        <a class="fnt-color" href="#">SERVICES</a>
+                        <ul class="dropdown-content" id="list">
+                            <a class="sliding-middle-out " href="./outsourcing.html" id="out">OUTSOURCING</a>
+                            <a class="sliding-middle-out " href="./techstaffing.html" id="staff">TECHNICAL STAFFING</a>
+                            <a class="sliding-middle-out " href="./appdevelop.html" id="app">APPLICATION DEVELOPMENT</a>
+                        </ul>
+                    </li>
+                    <li><a class="fnt-color menu-item" href="./about.html">ABOUT</a></li>
+                    <li><a class="fnt-color menu-item" href="./jobs.html">JOBS</a></li>
+                    <li><a class="fnt-color menu-item" href="./contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <div id="div1" class="menu header-fixed-shadow hide-default">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <div class="logo-hgt">
+                            <div>
+                                <a href="/"><img class="logo-pos" src="./img/essen-logo.svg"></a>
+                            </div>
+                            <div>
+                                <span class="logo-name">essen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav pos  pull-right main-menu">
+                        <li class="dropdown menu-item" id="dropdown">
+                            <a class="fnt-menu" href="#">SERVICES</a>
+                            <ul class="dropdown-content" id="list">
+                                <a class="sliding-middle-out" href="./outsourcing.html" id="out">OUTSOURCING</a>
+                                <a class="sliding-middle-out" href="./techstaffing.html" id="staff">TECHNICAL STAFFING</a>
+                                <a class="sliding-middle-out" href="./appdevelop.html" id="app">APPLICATION DEVELOPMENT</a>
+                            </ul>
+                        </li>
+                        <li><a class="fnt-menu menu-item" id="anchor1" href="about.html">ABOUT</a></li>
+                        <li><a class="fnt-menu menu-item" href="./jobs.html">JOBS</a></li>
+                        <li><a class="fnt-menu menu-item" href="./contactus.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="cap">
+                <div class="mainDiv"></div>
+                <p class="ln-hgt">We Strive for<br>Customer Success</p>
+            </div>
+        </div>
+
+        <div class="sub-page-description">
+            <p class="p1-left-align-blue">About Essen Solutions</p>
+            <p class="p2-left-align">At Essen Solutions, Inc. we focus to deliver unique technology driven Staffing services and solution for your business and software services across USA . We at Essen Solutions are developing effective outsourcing partnerships with clients
+                from various verticals like Automotive, Banking, Business Services, Energy, Financial, Insurance, Manufacturing, Pharmaceuticals, Retail, Transportation, and Utilities including small-midsized ISVs (Independent Software Vendors).</p>
+
+            <p class="p2-left-align">With specializations in Identity and Access Management, Security, Governance, Risk and Compliance, Java EE Development, Portals, Enterprise Applications and Business Intelligence, Business Analyst, SAS Analyst, Workday HCM Essen Solutions
+                has a unique ability to assist our clients regardless of technology to meet strategic IT and business objectives.</p>
+
+            <p class="p2-left-align">Our team of experts tactically addresses each one of our clients to let them imagine, identify and invent opportunities to boost their business. We take precious time of our clients to understand the elite concept cropping up in their mind
+                and research the market that is being entered to develop an unbeatable strategy. We promise to change your specific requirements from sales to production flawlessly.</p>
+
+            <p class="p2-left-align">It’s time to toss around our prospects. We invite you to view some of our sample work to get an idea about the creativity and cooperation of our team working tirelessly to deliver their best. If you are interested in availing our range of
+                services you can request for a free no obligation quote for your requirements. To get started today, Contact Us using our online contact form and we promise to be in touch with you within 48 working hours of receiving your request.</p>
+
+        </div>
+        <div class="footer">
+            <ul class="ul-des main-menu">
+                <a href="/"><img src="./img/logo-footer.png" class="logo1"></a>
+                <font class="li-des li-a fnt-size" style="margin-top:11px;">essen solutions &copy;2017</font>
+                <li class="li-des"><a class="li-a list-color" href="#">PRIVACY</a></li>
+                <li class="li-des"><a class="li-a list-color" href="#">TERMS</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="./contactus.html">CONTACT</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="./jobs.html">CAREER</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="#">DEVELOPERS</a></li>
+                <i id="ln" class="fa fa-linkedin image-ln " aria-hidden="true"></i>
+                <i id="twitter" class="fa fa-twitter image-twitter " aria-hidden="true"></i>
+                <i id="fb" class="fa fa-facebook image-fb" aria-hidden="true"></i>
+            </ul>
+        </div>
+
+    </div>
 </body>
+
 </html>
