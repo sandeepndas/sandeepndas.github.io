@@ -1,44 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Essen Solutions</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        $("#navbar-top").load("topbar.html");
-       });
-      
-      $(document).ready(function(){
-          $("#navbar-foot").load("footbar.html");
-         });
-  </script>
+    <meta charset="ISO-8859-1">
+    <title>Essen Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fontawesome.io/3.2.1/icon/code/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
-	<div id="navbar-top"></div>
-	<div class="container-fluid" style="background-color:#e6ffe6;">
-			<div class="container">
-			<h3>Outsourcing</h3>
-			<p>
-				We at Essen Solutions believe that a rapid growth can be achieved only with smart delegation. Our clients are the experts of their trade and should continuously strive for growth and profitability. Leave the support to us! Outsource!<br/>
-			</p>
-			<h3>Why Outsource Business Processes?</h3>
-			<ul>
-				<li>Reduces expenditure</li>
-				<li>Reduces additional responsibility of hiring, managing and training employees</li>
-				<li>Initiates Business Development as employees and systems are available on demand</li>
-				<li>Regulatory and Sarbanes-Oxley compliance</li>
-				<li>Regulatory and Sarbanes-Oxley compliance</li>
-				<li>Provides access to state-of-art technology minus the additional expenditure</li>
-				<li>Essen Solutions provides unsurpassed Business Process Outsourcing (BPO) services to our clients.</li>
-				<li>Flexibility being our key virtue, the sole purpose of Essen Solutions is to blend in the client’s preferred engagement model and adapt their software development methodology. We are aware that our clients are unique and come with their set of philosophies, goals, values and technological styles. This understanding leads us to work in a highly productive environment, an outcome of trust and co-ordination.</li>
-				<p>We add the human touch to your business. Our process resources are equipped to work in multiple domains and around the clock. We promise the best.</p>
-			</ul>
-		</div>
-		<br>
-		</div>
-	<div id="navbar-foot"></div>
+    <div class="container-fluid container-fluid-override">
+        <div class="background-image-home">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <a href="/"><img src="img/Essen-logo.png" class="logo"></a>
+                </div>
+                <ul class="nav navbar-nav nav-pos pull-right main-menu">
+                    <li class="dropdn menu-item" id="dropdown">
+                        <a class="fnt-color" href="#">SERVICES</a>
+                        <ul class="dropdown-content" id="list">
+                            <a class="sliding-middle-out " href="./outsourcing.html" id="out">OUTSOURCING</a>
+                            <a class="sliding-middle-out " href="./techstaffing.html" id="staff">TECHNICAL STAFFING</a>
+                            <a class="sliding-middle-out " href="./appdevelop.html" id="app">APPLICATION DEVELOPMENT</a>
+                        </ul>
+                    </li>
+                    <li><a class="fnt-color menu-item" href="./about.html">ABOUT</a></li>
+                    <li><a class="fnt-color menu-item" href="./jobs.html">JOBS</a></li>
+                    <li><a class="fnt-color menu-item" href="./contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <div id="div1" class="menu header-fixed-shadow hide-default">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <div class="logo-hgt">
+                            <div>
+                                <a href="/"><img class="logo-pos" src="img/essen-logo.svg"></a>
+                            </div>
+                            <div>
+                                <span class="logo-name">essen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav pos  pull-right main-menu">
+                        <li class="dropdown menu-item" id="dropdown">
+                            <a class="fnt-menu" href="#">SERVICES</a>
+                            <ul class="dropdown-content" id="list">
+                                <a class="sliding-middle-out" href="./outsourcing.html" id="out">OUTSOURCING</a>
+                                <a class="sliding-middle-out" href="./techstaffing.html" id="staff">TECHNICAL STAFFING</a>
+                                <a class="sliding-middle-out" href="./appdevelop.html" id="app">APPLICATION DEVELOPMENT</a>
+                            </ul>
+                        </li>
+                        <li><a class="fnt-menu menu-item" id="anchor1" href="./about.html">ABOUT</a></li>
+                        <li><a class="fnt-menu menu-item" href="./jobs.html">JOBS</a></li>
+                        <li><a class="fnt-menu menu-item" href="./contactus.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="cap">
+                <div class="mainDiv"></div>
+                <p class="ln-hgt">We Strive for<br>Customer Success</p>
+            </div>
+        </div>
+
+        <div class="sub-page-description">
+            <p class="p1-left-align-blue">Outsourcing</p>
+            <p class="p2-left-align">We at Essen Solutions believe that a rapid growth can be achieved only with smart delegation. Our clients are the experts of their trade and should continuously strive for growth and profitability. Leave the support to us! Outsource!</p>
+            <p class="p1-left-align-blue">Why Outsource Business Processes?</p>
+            <p class="p2-left-align">With specializations in Identity and Access Management, Security, Governance, Risk and Compliance, Java EE Development, Portals, Enterprise Applications and Business Intelligence, Business Analyst, SAS Analyst, Workday HCM Essen Solutions
+                has a unique ability to assist our clients regardless of technology to meet strategic IT and business objectives.</p>
+
+            <ul>
+                <li>Reduces expenditure.</li>
+                <li>Reduces additional responsibility of hiring, managing and training employees.</li>
+                <li>Initiates Business Development as employees and systems are available on demand.</li>
+                <li>Regulatory and Sarbanes-Oxley compliance.</li>
+                <li>Provides access to state-of-art technology minus the additional expenditure.</li>
+                <li>Essen Solutions provides unsurpassed Business Process Outsourcing (BPO) services to our clients. </li>
+                <li>Flexibility being our key virtue, the sole purpose of Essen Solutions is to blend in the client’s preferred engagement model and adapt their software development methodology. We are aware that our clients are unique and come with their
+                    set of philosophies, goals, values and technological styles. This understanding leads us to work in a highly productive environment, an outcome of trust and co-ordination.</li>
+                <p>We add the human touch to your business. Our process resources are equipped to work in multiple domains and around the clock. We promise the best.</p>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul class="ul-des main-menu">
+                <a href="/"><img src="img/logo-footer.png" class="logo1"></a>
+                <font class="li-des li-a fnt-size" style="margin-top:11px;">essen solutions &copy;2017</font>
+                <li class="li-des"><a class="li-a list-color" href="#">PRIVACY</a></li>
+                <li class="li-des"><a class="li-a list-color" href="#">TERMS</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="contactus.html">CONTACT</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="jobs.html">CAREER</a></li>
+                <li class="li-des"><a class="li-a mgn-top" href="#">DEVELOPERS</a></li>
+                <i id="ln" class="fa fa-linkedin image-ln " aria-hidden="true"></i>
+                <i id="twitter" class="fa fa-twitter image-twitter " aria-hidden="true"></i>
+                <i id="fb" class="fa fa-facebook image-fb" aria-hidden="true"></i>
+            </ul>
+        </div>
+
+    </div>
 </body>
+
 </html>
