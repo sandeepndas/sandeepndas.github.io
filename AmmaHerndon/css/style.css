@@ -347,7 +347,7 @@ a:focus {
   background-size: cover;
   background-position: center center;
   position: relative;
-  color: #999;
+  color: rgb(250, 163, 1);
 }
 
 #video .overlay {
@@ -714,12 +714,12 @@ footer strong {
 
 .social-icon li a:hover {
   background: #111;
-  color: #ffffff;
+  color: #fcb900;
 }
 
 .testimonial_subtitle{
-  color: #B6B6C3;
-  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 12x;
 }
   .testimonial_btn{
   background-color: #373d4b !important;
