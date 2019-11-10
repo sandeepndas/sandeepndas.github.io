@@ -1,0 +1,43 @@
+.logo {
+    margin-left: 0px;
+    margin-top: -17px;
+}
+.handy {
+    background-color: peru;
+}
+.logo-pos {
+    width: 56px;
+    margin-left: 25%;
+    margin-top: -20%;
+    padding-top: 0;
+}
+.content-box {
+   
+    float: right;
+    bottom: 380px;
+    background-color: #ee2424;
+    width: 340px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 5px;
+}
+.contact-style {
+    margin-left: 50%;
+    margin-bottom: 270px;
+    width: 60px;
+    height: 80px;
+}
+.service1 {
+    position: relative;
+    background-color: Black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: White;
+    font-size: 125%;
+}
+.service {
+    background-color:black; 
+    color:white; 
+    text-align: center;
+}
