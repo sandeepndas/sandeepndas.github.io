@@ -1,0 +1,105 @@
+(function (Amplitude, $, config) {
+
+/*
+ *	Amplitude Audio Player Configuration
+ */
+
+ 	if (config.audio !== undefined && config.audio.songs !== undefined && config.audio.playlists !== undefined) {
+	 	var env = config.env !== undefined ? config.env : 'production';
+		var env_slug = (env != 'production' ? '-' + env : '');
+		var port = (env != 'production' ? ':8443' : '');
+		if (env !== 'local')
+			config.api_base_url = 'https://analytics' + env_slug + '.opilink.com' + port + '/api/';
+		else
+			config.api_base_url = 'http://localhost:8080/api/';
+
+	 	Amplitude.libra_config = config;
+	 	if (env == 'dev')
+	 		Amplitude.setDebug(true);
+	    Amplitude.init({
+	        "songs": libra_config.audio.songs,
+          "playlists": libra_config.audio.playlists,
+          "callbacks": {
+            	"after_play": function () {
+			 	        audioIsPlaying();
+                if(typeof window.audio_on === 'function')
+                  audio_on();
+            	},
+              "after_pause": function () {
+                  audioIsPaused();
+                  if(typeof window.audio_paused === 'function')
+                    audio_paused();
+            	},
+      //       	"song_change": function () {
+      //       		$.ajax({
+			 		// 	url: Amplitude.libra_config.api_base_url + 'audio/load',
+			 		// 	method: 'post',
+			 		// 	data: {
+			 		// 		courseId: Amplitude.libra_config.courseId,
+			 		// 		userId: Amplitude.libra_config.userId,
+			 		// 		entryId: Amplitude.libra_config.entryId,
+			 		// 		token: Amplitude.libra_config.token,
+			 		// 		tag: Amplitude.getSongs()[Amplitude.getActiveIndex()].artist,
+			 		// 		title: Amplitude.getSongs()[Amplitude.getActiveIndex()].name,
+			 		// 		at_time: Date.now(),
+			 		// 	},
+			 		// }).done(function (data) {
+			 		// 	if (Amplitude.libra_config.env == 'dev')
+				 	// 		console.log(data);
+			 		// });
+      //       	},
+            },
+	    });
+	}
+
+  function audioIsPlaying(){
+    //console.log("Playing " + Amplitude.getSongs()[Amplitude.getActiveIndex()].name);
+    //objectID = Amplitude.libra_config.courseId + "/" + Amplitude.libra_config.entryId + "/" + Amplitude.getSongs()[Amplitude.getActiveIndex()].name;
+    //sendBasicStatement("https://w3id.org/xapi/video/verbs/played", "played", Amplitude.getSongs()[Amplitude.getActiveIndex()].name, "User played " + Amplitude.getSongs()[Amplitude.getActiveIndex()].name);
+    $.ajax({
+      url: Amplitude.libra_config.api_base_url + 'audio/play',
+      method: 'post',
+      data: {
+        version: Amplitude.libra_config.version,
+        courseId: Amplitude.libra_config.courseId,
+        userId: Amplitude.libra_config.userId,
+        entryId: Amplitude.libra_config.entryId,
+        token: Amplitude.libra_config.token,
+        tag: Amplitude.getSongs()[Amplitude.getActiveIndex()].artist,
+        title: Amplitude.getSongs()[Amplitude.getActiveIndex()].name,
+        at_time: Date.now(),
+        url: Amplitude.libra_config.url,
+        ip: Amplitude.libra_config.ip,
+        ua: Amplitude.libra_config.ua,
+      },
+    }).done(function (data) {
+      console.log(data);
+    });
+  }
+
+  function audioIsPaused(){
+    //console.log("Paused " + Amplitude.getSongs()[Amplitude.getActiveIndex()].name);
+    //objectID = Amplitude.libra_config.courseId + "/" + Amplitude.libra_config.entryId + "/" + Amplitude.getSongs()[Amplitude.getActiveIndex()].name;
+    //sendBasicStatement("https://w3id.org/xapi/video/verbs/paused", "paused", Amplitude.getSongs()[Amplitude.getActiveIndex()].name, "User paused " + Amplitude.getSongs()[Amplitude.getActiveIndex()].name);
+    $.ajax({
+      url: Amplitude.libra_config.api_base_url + 'audio/pause',
+      method: 'post',
+      data: {
+        version: Amplitude.libra_config.version,
+        courseId: Amplitude.libra_config.courseId,
+        userId: Amplitude.libra_config.userId,
+        entryId: Amplitude.libra_config.entryId,
+        token: Amplitude.libra_config.token,
+        tag: Amplitude.getSongs()[Amplitude.getActiveIndex()].artist,
+        title: Amplitude.getSongs()[Amplitude.getActiveIndex()].name,
+        at_time: Date.now(),
+        url: Amplitude.libra_config.url,
+        ip: Amplitude.libra_config.ip,
+        ua: Amplitude.libra_config.ua,
+      },
+    }).done(function (data) {
+      console.log(data);
+    });
+  } 
+
+})(Amplitude, jQuery, libra_config);
